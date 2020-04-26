@@ -18,7 +18,7 @@ namespace C_
         protected virtual void OnVideoEncoded(Video v)
         {
             if(videoEncodedWithParameter != null)
-               videoEncoded(this, new VideoEventArgs(){ VideoParameter = v });
+               videoEncodedWithParameter(this, new VideoEventArgs(){ VideoParameter = v });
         }
     }
 }

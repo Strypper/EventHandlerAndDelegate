@@ -22,8 +22,8 @@ namespace C_
             var VEP = new VideoEncoderWithParameter();
             var SEP = new SendEmailWithParameter();
             var SSP = new SendSMSWithParameter();
-            VEP.videoEncoded += SEP.OnVideoEncoded;
-            VEP.videoEncoded += SSP.OnVideoEncoded;
+            VEP.videoEncodedWithParameter += SEP.OnVideoEncoded;
+            VEP.videoEncodedWithParameter += SSP.OnVideoEncoded;
             VEP.EncodeVideo(v1);
         }
     }
