@@ -22,7 +22,7 @@ For what ?
 In the new C# version we don't need to do this 
 ```
          	public delegate void VideoEncodedHandler(object source, VideoEventArgs args);
-        	 public event VideoEncodedHandler videoEncoded;
+        	public event VideoEncodedHandler videoEncoded;
 ```
 Instead just to this
 ```
