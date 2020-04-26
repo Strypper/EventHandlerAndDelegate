@@ -2,14 +2,17 @@
 For what ? 
 * Loosely couple architecture
 * Easy to test
+
 #What is in the code ?
-There are 2 type of Event Handler, the one with no parameter and the one with code inside it
+	There are 2 type of Event Handler, the one with no parameter and the one with code inside it
 #No Parameter
+
 *Create a delegate
 *Create an Event Handler based on that delegate
 *Raise the Event
 ![](Demo/NoParameter.png)
 #With Parameter
+
 *Create a delegate but with a class which inheritances a custom EventArgs as second parameter
 *Create an EventHanlder base on the above Delegate
 *Require the trigger method with the parameter we need
