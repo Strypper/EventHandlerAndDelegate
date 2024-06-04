@@ -20,16 +20,16 @@ For what ?
 ![](Demo/WithParameter.png)
 # Better Way
 In the new C# version we don't need to do this 
-```
+```cs
          	public delegate void VideoEncodedHandler(object source, VideoEventArgs args);
         	public event VideoEncodedHandler videoEncoded;
 ```
 Instead just to this
-```
+```cs
 	public event EventHandler<VideoEventArgs> videoEncodedWithParameter;
 ```
 #Execute the example
-```
+```cs
         static void Main(string[] args)
         {
             //Event with no Parameter
